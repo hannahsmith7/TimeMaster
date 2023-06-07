@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="@string/CreateTab"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="230dp"
+        android:contentDescription="@string/CreateTab"
+        android:layout_height="230dp"
+        android:src="@drawable/avatars" />
+
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:autofillHints="@string/Username"
+        android:hint="@string/Username"
+        android:background="@drawable/card_bg"
+        android:drawableLeft="@android:drawable/ic_dialog_email"
+        android:backgroundTint="#E4E3E3"
+        android:inputType="text"
+        android:layout_below="@+id/logo" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/card_bg"
+        android:layout_marginTop="7dp"
+        android:drawableLeft="@android:drawable/ic_lock_lock"
+        android:autofillHints="@string/Username"
+        android:hint="@string/Password"
+        android:backgroundTint="#E4E3E3"
+        android:layout_below="@id/username"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/green"
+        android:text="@string/SignupBtn" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <Button
+            android:id="@+id/tvLoginLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/backLogin"
+            android:backgroundTint="@color/green"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+</LinearLayout>

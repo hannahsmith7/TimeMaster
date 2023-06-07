@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.part.myapplication.ui.Fragment.DashBoardFragment"
+        android:label="@string/Dashboard"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_goals"
+        android:name="com.part.myapplication.ui.Fragment.GoalScreenFragment"
+        android:label="@string/GoalSScreen"
+        tools:layout="@layout/fragment_goal_screen" />
+
+    <fragment
+        android:id="@+id/nav_Timer"
+        android:name="com.part.myapplication.ui.Fragment.TimeScreenFragment"
+        android:label="@string/TimerScreen"
+        tools:layout="@layout/fragment_timer_screen" />
+
+    <fragment
+        android:id="@+id/nav_Achievements_Screen"
+        android:name="com.part.myapplication.ui.Fragment.Achievement_Screen"
+        android:label="@string/Achievements_Screen"
+        tools:layout="@layout/fragment_achievement__screen" />
+
+    <fragment
+        android:id="@+id/nav_Project_Task_Management_Screen"
+        android:name="com.part.myapplication.ui.Fragment.Project_Task_Management"
+        android:label="@string/Project_Task_Management_Screen"
+        tools:layout="@layout/fragment_project__task__management" />
+
+    <fragment
+        android:id="@+id/nav_UpdateFragment"
+        android:name="com.part.myapplication.ui.Fragment.UpdateFragment"
+        android:label="@string/nav_UpdateFragment"
+        tools:layout="@layout/fragment_update" />
+
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.part.myapplication.ui.Fragment.setting"
+        android:label="@string/Settings_Screen"
+        tools:layout="@layout/fragment_setting" />
+</navigation>

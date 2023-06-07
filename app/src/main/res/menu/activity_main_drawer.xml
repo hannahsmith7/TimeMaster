@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@android:drawable/ic_dialog_dialer"
+            android:title="@string/Dashboard" />
+        <item
+            android:id="@+id/nav_goals"
+            android:icon="@android:drawable/btn_star_big_on"
+            android:title="@string/GoalSScreen" />
+        <item
+            android:id="@+id/nav_Timer"
+            android:icon="@android:drawable/ic_lock_idle_alarm"
+            android:title="@string/TimerScreen" />
+
+        <item
+            android:id="@+id/nav_Achievements_Screen"
+            android:icon="@android:drawable/stat_sys_upload"
+            android:title="@string/Achievements_Screen" />
+
+        <item
+            android:id="@+id/nav_Project_Task_Management_Screen"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="@string/Project_Task_Management_Screen" />
+
+        <item
+            android:id="@+id/nav_UpdateFragment"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="@string/nav_UpdateFragment" />
+
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@android:drawable/ic_menu_preferences"
+            android:title="@string/Settings_Screen" />
+    </group>
+</menu>

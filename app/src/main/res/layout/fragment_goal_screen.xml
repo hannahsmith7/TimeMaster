@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.Fragment.GoalScreenFragment">
+
+<RelativeLayout
+    android:id="@+id/rl"
+    android:layout_width="wrap_content"
+    android:layout_height="260dp">
+    <LinearLayout
+        android:id="@+id/ln"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="5dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/card_bg"
+        android:elevation="4dp"
+        android:backgroundTint="@color/Red"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        tools:ignore="MissingConstraints">
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_input_add"
+            android:layout_gravity="top|end"
+            android:layout_marginEnd="10dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create A new "
+            android:textColor="@color/white"
+            android:textStyle="bold"
+
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Goal"
+            android:textSize="14sp"/>
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/ln2"
+        android:layout_width="140dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="5dp"
+        android:layout_weight="1"
+        android:layout_below="@id/ln"
+        android:orientation="vertical"
+        android:background="@drawable/card_bg"
+        android:backgroundTint="@color/Red"
+        android:elevation="4dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        tools:ignore="MissingConstraints">
+        >
+
+
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Start where you are. use what you have. do what you can.\n Arhtur AShe"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="260dp"
+        android:layout_toEndOf="@+id/rl"
+        >
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChart"
+            android:layout_width="match_parent"
+
+
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+<HorizontalScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/card_bg"
+    android:layout_below="@id/rl">
+
+    <TableLayout
+        android:id="@+id/tl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#A3A0A0"
+        android:padding="@dimen/dp_10"
+        android:stretchColumns="0,1,2,3,4">
+
+        <TextView
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upcoming Projects"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true">
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="@dimen/dp_30"
+                android:text="Name"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="@dimen/dp_30"
+                android:text="Date"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_track_hours"
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="@dimen/dp_30"
+                android:text="Track Hours"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_progress"
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="@dimen/dp_30"
+                android:text="Progress"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_completed"
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="@dimen/dp_30"
+                android:text="Completed"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold" />
+        </TableRow>
+
+
+    </TableLayout>
+</HorizontalScrollView>
+
+</RelativeLayout>

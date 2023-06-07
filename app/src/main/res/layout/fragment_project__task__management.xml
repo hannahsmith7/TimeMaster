@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".ui.Fragment.Project_Task_Management">
+
+    <HorizontalScrollView
+        android:id="@+id/hs"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_bg"
+        >
+
+        <TableLayout
+            android:id="@+id/tl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10"
+            android:background="#A3A0A0"
+            android:stretchColumns="0,1,2,3,4">
+
+            <TextView
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Completed project"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold" />
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="@dimen/dp_30"
+                    android:text="Name"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_date"
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="@dimen/dp_30"
+                    android:text="Date"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_track_hours"
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="@dimen/dp_30"
+                    android:text="Track Hours"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_progress"
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="@dimen/dp_30"
+                    android:text="Progress"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_completed"
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="@dimen/dp_30"
+
+                    android:text="Completed"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold" />
+            </TableRow>
+
+
+        </TableLayout>
+
+
+    </HorizontalScrollView>
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/hs"
+
+        android:layout_height="match_parent" />
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/Red"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- ComboBox -->
+    <Spinner
+        android:id="@+id/comboBoxName"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:spinnerMode="dropdown"
+        android:background="@android:drawable/btn_dropdown"
+        android:entries="@array/value"/>
+
+    <!-- TextView -->
+    <TextView
+        android:id="@+id/idTextView"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="ID"/>
+
+    <!-- EditText for Date -->
+    <EditText
+        android:id="@+id/dateEditText"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Date"
+        android:inputType="date"/>
+
+    <!-- EditText for TrackHours -->
+    <EditText
+        android:id="@+id/trackHoursEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textColor="@color/white"
+
+        android:hint="Track Hours"
+        android:inputType="number"/>
+
+    <!-- EditText for Progress -->
+    <EditText
+        android:id="@+id/progressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textColor="@color/white"
+        android:hint="Progress"
+        android:inputType="number"/>
+
+    <!-- Spinner for Completed -->
+    <Spinner
+        android:id="@+id/completedComboBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textColor="@color/white"
+        android:spinnerMode="dropdown"
+        android:entries="@array/answers"/>
+    <!-- button for update -->
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Update"
+
+        android:gravity="center"
+        android:backgroundTint="@color/green"/>
+
+</LinearLayout>

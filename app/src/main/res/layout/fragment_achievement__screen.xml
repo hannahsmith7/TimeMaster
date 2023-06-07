@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".ui.Fragment.Achievement_Screen">
+
+    <!-- TODO: Update blank fragment layout -->
+    <HorizontalScrollView
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ln"
+        android:background="@drawable/card_bg"
+       >
+
+        <TableLayout
+            android:id="@+id/tl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#A3A0A0"
+            android:padding="@dimen/dp_10"
+            android:stretchColumns="0,1,2,3,4">
+
+            <TextView
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upcoming Projects"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_size_medium"
+                android:textStyle="bold" />
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="@dimen/dp_30"
+                    android:text="Name"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_date"
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="@dimen/dp_30"
+                    android:text="Date"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_track_hours"
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="@dimen/dp_30"
+                    android:text="Track Hours"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_progress"
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="@dimen/dp_30"
+                    android:text="Progress"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_completed"
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="@dimen/dp_30"
+                    android:text="Completed"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_size_medium"
+                    android:textStyle="bold" />
+
+
+            </TableRow>
+
+
+        </TableLayout>
+    </HorizontalScrollView>
+<LinearLayout
+    android:id="@+id/ln"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+    >
+    <TextView
+        android:id="@+id/txtDecription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rank achievement"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="100dp"
+            android:src="@drawable/avatars"
+            android:layout_height="100dp"/>
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_height="match_parent"
+            android:background="@drawable/card_bg"
+            android:backgroundTint="@color/Red"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="18sp"
+
+            android:text="description"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+
+</RelativeLayout>

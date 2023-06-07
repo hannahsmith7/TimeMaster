@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+     >
+<ImageView
+    android:id="@+id/logo"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:src="@drawable/logo"
+
+    android:layout_centerHorizontal="true"
+    />
+
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:autofillHints="@string/Username"
+        android:hint="@string/Username"
+        android:background="@drawable/card_bg"
+        android:drawableLeft="@android:drawable/ic_dialog_email"
+        android:backgroundTint="#E4E3E3"
+        android:inputType="text"
+        android:layout_below="@+id/logo" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/card_bg"
+        android:layout_marginTop="7dp"
+        android:drawableLeft="@android:drawable/ic_lock_lock"
+        android:autofillHints="@string/Username"
+        android:hint="@string/Password"
+        android:backgroundTint="#E4E3E3"
+        android:layout_below="@id/username"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#DA1E10"
+        android:text="@string/Login"
+        android:layout_below="@id/password"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_marginTop="130dp"
+        android:background="#FF4081"
+        android:layout_alignParentBottom="true"
+        android:layout_height="90dp">
+
+        <Button
+            android:id="@+id/tvSignupLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Signup"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="#DA1E10"
+            android:layout_alignParentEnd="true"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
